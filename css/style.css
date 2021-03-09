@@ -191,12 +191,17 @@ nav {
     text-align: center;
 }
 
+.advantages .advantages_tegs .col-md-6:nth-child(2n) .advantages_pic {
+    margin: auto 25px auto 0;
+}
+
 .advantages .advantages_img {}
 
 .advantages .advantages_tegs {
     display: flex;
     margin: 0;
     margin-top: 40px;
+    padding-left: 45px;
 }
 
 .advantages .advantages_descr, .advantages span {
