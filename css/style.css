@@ -107,6 +107,7 @@ nav {
 
 .promo .promo_header {
     margin: 0;
+    margin-top: 40px;
     color: white;
     font-size: 60px;
     font-weight: 700;
@@ -137,15 +138,86 @@ nav {
 .promo .promo_btn {
     display: block;
     margin: 118px auto 0 auto;
-    width: 172px;
-    height: 46px;
+    width: 260px;
+    height: 65px;
     box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
     border: none;
     background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
     color: #fff;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
     border-radius: 4px;
+}
+
+.advantages {
+    min-height: 900px;
+}
+
+.advantages .advantages_header {
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    width: 110px;
+    height: 25px;
+    font-size: 11px;
+    font-weight: 300;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.advantages .advantages_subheader {
+    margin: 0;
+    margin-top: 35px;
+    color: black;
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 38px;
+}
+
+.advantages .advantages_pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 25px auto 35px;
+    width: 115px;
+    height: 115px;
+    background-color: #1facc7;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.advantages .advantages_img {}
+
+.advantages .advantages_tegs {
+    display: flex;
+    margin: 0;
+    margin-top: 40px;
+}
+
+.advantages .advantages_descr, .advantages span {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 340px;
+    font-size: 15px;
+    line-height: 21px;
+    float: none;
+    text-align: justify;
+}
+
+.advantages span {
+    color: #409db4;
+    font-size: 17px;
+    line-height: 21px;
+    float: none;
+}
+
+.col-md-6 {
+    display: flex;
+    padding-bottom: 35px;
 }
