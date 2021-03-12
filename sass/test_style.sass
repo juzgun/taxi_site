@@ -1,4 +1,10 @@
 $blue: #1facc7
+$light_red: #ff5656
+
+@mixin btn_hover
+	&:hover
+		background-image: none
+		background-color: $blue
 
 *
   margin: 0
@@ -86,58 +92,53 @@ nav
 	font-weight: 400
 	text-transform: uppercase
 	border-radius: 4px
+	@include btn_hover
 
 .promo
-  padding: 150px 0 135px 0
-  min-height: 800px
-  background: url(../img/promo_bg.png) center (center / cover) no-repeat
+	padding: 150px 0 135px 0
+	min-height: 800px
+	background: url(../img/promo_bg.png) center (center / cover) no-repeat
+	&_header
+		margin: 0
+		margin-top: 40px
+		color: white
+		font-size: 60px
+		font-weight: 700
+		text-align: center
+		line-height: 60px
+	&_subheader
+		margin: 0
+		margin-top: 22px
+		color: white
+		font-size: 36px
+		font-weight: 700
+		text-align: center
+		line-height: 36px
+	&_descr
+		margin: 0
+		margin-top: 23px
+		color: white
+		font-size: 18px
+		font-weight: 400
+		text-align: center
+		line-height: 24px
+	&_btn
+		display: block
+		margin: 118px auto 0 auto
+		width: 260px
+		height: 65px
+		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #fff
+		font-size: 18px
+		font-weight: 400
+		text-transform: uppercase
+		border-radius: 4px
+		@include btn_hover
 
-.promo_header
-	margin: 0
-	margin-top: 40px
-	color: white
-	font-size: 60px
-	font-weight: 700
-	text-align: center
-	line-height: 60px
-
-.promo_subheader
-	margin: 0
-	margin-top: 22px
-	color: white
-	font-size: 36px
-	font-weight: 700
-	text-align: center
-	line-height: 36px
-
-.promo_descr
-	margin: 0
-	margin-top: 23px
-	color: white
-	font-size: 18px
-	font-weight: 400
-	text-align: center
-	line-height: 24px
-
-.promo_btn
-	display: block
-	margin: 118px auto 0 auto
-	width: 260px
-	height: 65px
-	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
-	border: none
-	background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
-	color: #fff
-	font-size: 18px
-	font-weight: 400
-	text-transform: uppercase
-	border-radius: 4px
-
-.advantages
-  min-height: 900px
-
-.advantages_header, .mobile_header
+.title_header
 	display: block
 	margin: 0 auto
 	margin-top: 70px
@@ -149,8 +150,7 @@ nav
 	background-color: black
 	text-align: center
 	padding-top: 3px
-
-.advantages_subheader, .mobile_subheader
+.title_subheader
 	margin: 0
 	margin-top: 40px
 	color: black
@@ -159,63 +159,58 @@ nav
 	text-align: center
 	line-height: 38px
 
-.advantages_pic
-	display: flex
-	justify-content: center
-	align-items: center
-	margin: auto 25px auto 35px
-	width: 115px
-	height: 115px
-	background-color: $blue
-	border-radius: 50%
-	text-align: center
-
-.advantages_tegs .col-md-6:nth-child(2n) .advantages_pic
-	margin: auto 25px auto 0
-
-.advantages_img
-
-.advantages_tegs
-	display: flex
-	margin: 0
-	margin-top: 40px
-	padding-left: 45px
-
-.advantages_descr
-	display: block
-	margin: 0
-	padding: 0
-	width: 340px
-	font-size: 15px
-	line-height: 21px
-	float: none
-	text-align: justify
-
-span
-	display: block
-	margin: 0
-	padding: 0
-	width: 340px
-	font-size: 15px
-	line-height: 21px
-	float: none
-	text-align: justify
-	color: $blue
-	font-size: 17px
-	line-height: 21px
-	float: none
-
-.col-md-6
-  display: flex
-  padding-bottom: 35px
+.advantages
+	min-height: 900px
+	&_pic
+		display: flex
+		justify-content: center
+		align-items: center
+		margin: auto 25px auto 35px
+		width: 115px
+		height: 115px
+		background-color: $blue
+		border-radius: 50%
+		text-align: center
+	&_tegs .col-md-6:nth-child(2n) .advantages_pic
+		margin: auto 25px auto 0
+	&_tegs
+		display: flex
+		margin: 0
+		margin-top: 40px
+		padding-left: 45px
+	&_descr
+		display: block
+		margin: 0
+		padding: 0
+		width: 340px
+		font-size: 15px
+		line-height: 21px
+		float: none
+		text-align: justify
+	span
+		display: block
+		margin: 0
+		padding: 0
+		width: 340px
+		font-size: 15px
+		line-height: 21px
+		float: none
+		text-align: justify
+		color: $blue
+		font-size: 17px
+		line-height: 21px
+		float: none
+	.col-md-6
+		display: flex
+		padding-bottom: 35px
 
 .mobile
 	min-height: 864px
 	padding: 0 0 79px 0
 	background: url('../img/mobile_bg.png') center (center / cover) no-repeat
-	.mobile_text
+	&_text
 		margin-top: 19px
-		color: #fff
+		color: black
 		font-size: 17px
 		font-weight: 400
 		text-align: center
@@ -257,5 +252,92 @@ span
 			width: 26px
 			height: 26px
 			margin: 0 auto
+			background-color: #000
 			border-radius: 50%
 			padding: 6px
+			cursor: pointer
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $blue
+			&:after
+				content: ''
+				position: absolute
+				left: 50%
+				transform: translateX(-50%)
+				display: block
+				width: 2px
+				height: 14px
+				background-color: $blue
+			&:hover
+				&:before, &:after
+					background-color: $light_red
+					transition: 0.3 all
+
+.choise
+	min-height: 896px
+	padding: 0 0 145px 0
+	background: url('../img/section_4_bg.png') center (center / cover) no-repeat
+	.title_header
+		color: black
+		background-color: white
+	.title_subheader
+		color: white
+	&_text
+		margin-top: 19px
+		color: white
+		font-size: 17px
+		font-weight: 400
+		text-align: center
+	img
+		margin-top: 55px
+		transform: translateX(55px)
+	&_descr
+		font-size: 18px
+		font-weight: 400
+		text-align: center
+		color: #222
+
+.require
+	padding: 68px 0 84px0
+	&_block
+		margin: 33px 0
+		&_nmb
+			margin-bottom: 0
+	&_title
+		color: #1ca8c3
+		font-size: 22px
+		font-weight: 400
+	&_list
+		list-style-type: none
+		padding-left: 50px
+		margin-top: 20px
+		li
+			position: relative
+			font-size: 17px
+			font-weight: 300
+			line-height: 24px
+			margin-bottom: 10px
+			&:before
+				content: ''
+				display: block
+				position: absolute
+				left: -32px
+				top: 3px
+				width: 21px
+				height: 20px
+				background: url(../icons/check_blue.svg) center center/cover no-repeat
+	&_descr
+		color: $blue
+		font-size: 17px
+		font-weight: 400
+		line-height: 24px
+	.warning
+		.require_title
+			color: $light_red
+		.require_list
+			li
+				&:before
+					background: url(../icons/check_red.svg) center center/cover no-repeat

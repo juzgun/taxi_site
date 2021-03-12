@@ -1,20 +1,24 @@
-/* line 3, ../taxi_site/sass/test_style.sass */
+/* line 9, ../taxi_site/sass/test_style.sass */
+
 * {
   margin: 0;
   padding: 0;
 }
 
-/* line 7, ../taxi_site/sass/test_style.sass */
+/* line 13, ../taxi_site/sass/test_style.sass */
+
 html {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 10, ../taxi_site/sass/test_style.sass */
+/* line 16, ../taxi_site/sass/test_style.sass */
+
 header {
   position: relative;
 }
 
-/* line 13, ../taxi_site/sass/test_style.sass */
+/* line 19, ../taxi_site/sass/test_style.sass */
+
 nav {
   height: 50px;
   background-color: #272626;
@@ -23,7 +27,8 @@ nav {
   z-index: 999;
 }
 
-/* line 20, ../taxi_site/sass/test_style.sass */
+/* line 26, ../taxi_site/sass/test_style.sass */
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -32,25 +37,29 @@ nav {
   list-style: none;
 }
 
-/* line 27, ../taxi_site/sass/test_style.sass */
+/* line 33, ../taxi_site/sass/test_style.sass */
+
 .menu_link {
   color: #fff;
   font-size: 15px;
   font-weight: 300;
 }
 
-/* line 32, ../taxi_site/sass/test_style.sass */
+/* line 38, ../taxi_site/sass/test_style.sass */
+
 .menu_item {
   border-right: 2px dotted #000;
   padding-right: 50px;
 }
 
-/* line 36, ../taxi_site/sass/test_style.sass */
+/* line 42, ../taxi_site/sass/test_style.sass */
+
 .menu_item:last-child {
   border-right: none;
 }
 
-/* line 39, ../taxi_site/sass/test_style.sass */
+/* line 45, ../taxi_site/sass/test_style.sass */
+
 .subheader {
   margin-top: 50px;
   position: absolute;
@@ -60,14 +69,16 @@ nav {
   color: white;
 }
 
-/* line 47, ../taxi_site/sass/test_style.sass */
+/* line 53, ../taxi_site/sass/test_style.sass */
+
 .subheader_logo {
   display: block;
   max-width: 100%;
   margin-top: 16px;
 }
 
-/* line 52, ../taxi_site/sass/test_style.sass */
+/* line 58, ../taxi_site/sass/test_style.sass */
+
 .subheader_offitial {
   opacity: 0.5;
   color: #fff;
@@ -76,7 +87,8 @@ nav {
   margin-top: 6px;
 }
 
-/* line 59, ../taxi_site/sass/test_style.sass */
+/* line 65, ../taxi_site/sass/test_style.sass */
+
 .subheader_call {
   color: #fff;
   font-size: 12px;
@@ -85,7 +97,8 @@ nav {
   text-align: right;
 }
 
-/* line 66, ../taxi_site/sass/test_style.sass */
+/* line 72, ../taxi_site/sass/test_style.sass */
+
 .subheader_phone {
   display: block;
   margin-top: 8px;
@@ -97,7 +110,8 @@ nav {
   line-height: 12px;
 }
 
-/* line 76, ../taxi_site/sass/test_style.sass */
+/* line 82, ../taxi_site/sass/test_style.sass */
+
 .subheader_btn {
   margin-top: 19px;
   width: 172px;
@@ -113,14 +127,23 @@ nav {
   border-radius: 4px;
 }
 
-/* line 90, ../taxi_site/sass/test_style.sass */
+/* line 5, ../taxi_site/sass/test_style.sass */
+
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1facc7;
+}
+
+/* line 97, ../taxi_site/sass/test_style.sass */
+
 .promo {
   padding: 150px 0 135px 0;
   min-height: 800px;
   background: url(../img/promo_bg.png) center center/cover no-repeat;
 }
 
-/* line 95, ../taxi_site/sass/test_style.sass */
+/* line 101, ../taxi_site/sass/test_style.sass */
+
 .promo_header {
   margin: 0;
   margin-top: 40px;
@@ -131,7 +154,8 @@ nav {
   line-height: 60px;
 }
 
-/* line 104, ../taxi_site/sass/test_style.sass */
+/* line 109, ../taxi_site/sass/test_style.sass */
+
 .promo_subheader {
   margin: 0;
   margin-top: 22px;
@@ -142,7 +166,8 @@ nav {
   line-height: 36px;
 }
 
-/* line 113, ../taxi_site/sass/test_style.sass */
+/* line 117, ../taxi_site/sass/test_style.sass */
+
 .promo_descr {
   margin: 0;
   margin-top: 23px;
@@ -153,7 +178,8 @@ nav {
   line-height: 24px;
 }
 
-/* line 122, ../taxi_site/sass/test_style.sass */
+/* line 125, ../taxi_site/sass/test_style.sass */
+
 .promo_btn {
   display: block;
   margin: 118px auto 0 auto;
@@ -170,13 +196,16 @@ nav {
   border-radius: 4px;
 }
 
-/* line 137, ../taxi_site/sass/test_style.sass */
-.advantages {
-  min-height: 900px;
+/* line 5, ../taxi_site/sass/test_style.sass */
+
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1facc7;
 }
 
-/* line 140, ../taxi_site/sass/test_style.sass */
-.advantages_header, .mobile_header {
+/* line 141, ../taxi_site/sass/test_style.sass */
+
+.title_header {
   display: block;
   margin: 0 auto;
   margin-top: 70px;
@@ -191,7 +220,8 @@ nav {
 }
 
 /* line 153, ../taxi_site/sass/test_style.sass */
-.advantages_subheader, .mobile_subheader {
+
+.title_subheader {
   margin: 0;
   margin-top: 40px;
   color: black;
@@ -202,6 +232,13 @@ nav {
 }
 
 /* line 162, ../taxi_site/sass/test_style.sass */
+
+.advantages {
+  min-height: 900px;
+}
+
+/* line 164, ../taxi_site/sass/test_style.sass */
+
 .advantages_pic {
   display: flex;
   justify-content: center;
@@ -214,12 +251,14 @@ nav {
   text-align: center;
 }
 
-/* line 173, ../taxi_site/sass/test_style.sass */
+/* line 174, ../taxi_site/sass/test_style.sass */
+
 .advantages_tegs .col-md-6:nth-child(2n) .advantages_pic {
   margin: auto 25px auto 0;
 }
 
-/* line 178, ../taxi_site/sass/test_style.sass */
+/* line 176, ../taxi_site/sass/test_style.sass */
+
 .advantages_tegs {
   display: flex;
   margin: 0;
@@ -227,7 +266,8 @@ nav {
   padding-left: 45px;
 }
 
-/* line 184, ../taxi_site/sass/test_style.sass */
+/* line 181, ../taxi_site/sass/test_style.sass */
+
 .advantages_descr {
   display: block;
   margin: 0;
@@ -239,8 +279,9 @@ nav {
   text-align: justify;
 }
 
-/* line 194, ../taxi_site/sass/test_style.sass */
-span {
+/* line 190, ../taxi_site/sass/test_style.sass */
+
+.advantages span {
   display: block;
   margin: 0;
   padding: 0;
@@ -255,34 +296,39 @@ span {
   float: none;
 }
 
-/* line 208, ../taxi_site/sass/test_style.sass */
-.col-md-6 {
+/* line 203, ../taxi_site/sass/test_style.sass */
+
+.advantages .col-md-6 {
   display: flex;
   padding-bottom: 35px;
 }
 
-/* line 212, ../taxi_site/sass/test_style.sass */
+/* line 207, ../taxi_site/sass/test_style.sass */
+
 .mobile {
   min-height: 864px;
   padding: 0 0 79px 0;
   background: url("../img/mobile_bg.png") center center/cover no-repeat;
 }
 
-/* line 216, ../taxi_site/sass/test_style.sass */
-.mobile .mobile_text {
+/* line 211, ../taxi_site/sass/test_style.sass */
+
+.mobile_text {
   margin-top: 19px;
-  color: #fff;
+  color: black;
   font-size: 17px;
   font-weight: 400;
   text-align: center;
 }
 
-/* line 222, ../taxi_site/sass/test_style.sass */
+/* line 217, ../taxi_site/sass/test_style.sass */
+
 .mobile .row {
   margin-top: 32px;
 }
 
-/* line 224, ../taxi_site/sass/test_style.sass */
+/* line 219, ../taxi_site/sass/test_style.sass */
+
 .mobile_item {
   position: relative;
   width: 320px;
@@ -292,37 +338,44 @@ span {
   padding-top: 92px;
 }
 
-/* line 231, ../taxi_site/sass/test_style.sass */
+/* line 226, ../taxi_site/sass/test_style.sass */
+
 .mobile_item_1 {
   background: url("../img/mobile_screen_1.png") center center/cover no-repeat;
 }
 
-/* line 233, ../taxi_site/sass/test_style.sass */
+/* line 228, ../taxi_site/sass/test_style.sass */
+
 .mobile_item_2 {
   background: url("../img/mobile_screen_2.png") center center/cover no-repeat;
 }
 
-/* line 235, ../taxi_site/sass/test_style.sass */
+/* line 230, ../taxi_site/sass/test_style.sass */
+
 .mobile_item_3 {
   background: url("../img/mobile_screen_3.png") center center/cover no-repeat;
 }
 
-/* line 237, ../taxi_site/sass/test_style.sass */
+/* line 232, ../taxi_site/sass/test_style.sass */
+
 .mobile_item_4 {
   background: url("../img/mobile_screen_4.png") center center/cover no-repeat;
 }
 
-/* line 239, ../taxi_site/sass/test_style.sass */
+/* line 234, ../taxi_site/sass/test_style.sass */
+
 .mobile_item_5 {
   background: url("../img/mobile_screen_5.png") center center/cover no-repeat;
 }
 
-/* line 241, ../taxi_site/sass/test_style.sass */
+/* line 236, ../taxi_site/sass/test_style.sass */
+
 .mobile_item_6 {
   background: url("../img/mobile_screen_6.png") center center/cover no-repeat;
 }
 
-/* line 243, ../taxi_site/sass/test_style.sass */
+/* line 238, ../taxi_site/sass/test_style.sass */
+
 .mobile_item_subtitle {
   color: white;
   font-size: 24px;
@@ -331,7 +384,8 @@ span {
   text-align: center;
 }
 
-/* line 249, ../taxi_site/sass/test_style.sass */
+/* line 244, ../taxi_site/sass/test_style.sass */
+
 .mobile_item_plus {
   display: flex;
   justify-content: center;
@@ -343,8 +397,105 @@ span {
   width: 26px;
   height: 26px;
   margin: 0 auto;
+  background-color: #000;
   border-radius: 50%;
   padding: 6px;
+  cursor: pointer;
+}
+
+/* line 259, ../taxi_site/sass/test_style.sass */
+
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1facc7;
+}
+
+/* line 265, ../taxi_site/sass/test_style.sass */
+
+.mobile_item_plus:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1facc7;
+}
+
+/* line 275, ../taxi_site/sass/test_style.sass */
+
+.mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+  background-color: #ff5656;
+  transition: 0.3 all;
+}
+
+/* line 279, ../taxi_site/sass/test_style.sass */
+
+.choise {
+  min-height: 896px;
+  padding: 0 0 145px 0;
+  background: url("../img/section_4_bg.png") center center/cover no-repeat;
+}
+
+/* line 283, ../taxi_site/sass/test_style.sass */
+
+.choise .title_header {
+  color: black;
+  background-color: white;
+}
+
+/* line 286, ../taxi_site/sass/test_style.sass */
+
+.choise .title_subheader {
+  color: white;
+}
+
+/* line 288, ../taxi_site/sass/test_style.sass */
+
+.choise_text {
+  margin-top: 19px;
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* line 294, ../taxi_site/sass/test_style.sass */
+
+.choise img {
+  margin-top: 55px;
+  transform: translateX(55px);
+}
+
+/* line 297, ../taxi_site/sass/test_style.sass */
+
+.choise_descr {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: #222;
+}
+
+/* line 303, ../taxi_site/sass/test_style.sass */
+
+.require {
+  padding: 68px 0 84px0;
+}
+
+/* line 305, ../taxi_site/sass/test_style.sass */
+
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 307, ../taxi_site/sass/test_style.sass */
+
+.require_block_nmb {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=test_style.css.map */
