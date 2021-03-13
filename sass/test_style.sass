@@ -7,91 +7,83 @@ $light_red: #ff5656
 		background-color: $blue
 
 *
-  margin: 0
-  padding: 0
+	margin: 0
+	padding: 0
 
 html
-  font-family: 'Roboto', sans-serif
+	font-family: 'Roboto', sans-serif
 
 header
-  position: relative
+	position: relative
 
 nav
-  height: 50px
-  background-color: #272626
-  position: fixed
-  width: 100%
-  z-index: 999
+	height: 50px
+	background-color: #272626
+	position: fixed
+	width: 100%
+	z-index: 999
 
 .menu
-  display: flex
-  justify-content: space-between
-  padding: 13px 70px
-  margin: 0
-  list-style: none
-
-.menu_link
-	color: #fff
-	font-size: 15px
-	font-weight: 300
-
-.menu_item
-	border-right: 2px dotted #000
-	padding-right: 50px
-
-	&:last-child
-      border-right: none
+	display: flex
+	justify-content: space-between
+	padding: 13px 70px
+	margin: 0
+	list-style: none
+	&_link
+		color: #fff
+		font-size: 15px
+		font-weight: 300
+	&_item
+		border-right: 2px dotted #000
+		padding-right: 50px
+		&:last-child
+			border-right: none
 
 .subheader
-  margin-top: 50px
-  position: absolute
-  width: 100%
-  height: 84px
-  background-color: rgba(0, 0, 0, 0.6)
-  color: white
-
-.subheader_logo
-	display: block
-	max-width: 100%
-	margin-top: 16px
-
-.subheader_offitial
-	opacity: 0.5
-	color: #fff
-	font-size: 13px
-	font-weight: 400
-	margin-top: 6px
-
-.subheader_call
-	color: #fff
-	font-size: 12px
-	font-weight: 300
-	margin-top: 19px
-	text-align: right
-
-.subheader_phone
-	display: block
-	margin-top: 8px
-	color: #fff
-	font-size: 22px
-	font-weight: 400
-	text-transform: uppercase
-	text-align: right
-	line-height: 12px
-
-.subheader_btn
-	margin-top: 19px
-	width: 172px
-	height: 46px
-	box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
-	border: none
-	background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
-	color: #fff
-	font-size: 14px
-	font-weight: 400
-	text-transform: uppercase
-	border-radius: 4px
+	margin-top: 50px
+	position: absolute
+	width: 100%
+	height: 84px
+	background-color: rgba(0, 0, 0, 0.6)
+	color: white
+	&_logo
+		display: block
+		max-width: 100%
+		margin-top: 16px
+	&_offitial
+		opacity: 0.5
+		color: #fff
+		font-size: 13px
+		font-weight: 400
+		margin-top: 6px
+	&_call
+		color: #fff
+		font-size: 12px
+		font-weight: 300
+		margin-top: 19px
+		text-align: right
+	&_phone
+		display: block
+		margin-top: 8px
+		color: #fff
+		font-size: 22px
+		font-weight: 400
+		text-transform: uppercase
+		text-align: right
+		line-height: 12px
+	&_btn
+		margin-top: 19px
+		width: 172px
+		height: 46px
+		box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12)
+		border: none
+		background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+		text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21)
+		color: #fff
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+		border-radius: 4px
 	@include btn_hover
 
 .promo
@@ -341,3 +333,114 @@ nav
 			li
 				&:before
 					background: url(../icons/check_red.svg) center center/cover no-repeat
+
+.world
+	min-height: 717px
+	padding: 0 0 50px 0
+	background: url('../img/fifth_section_bg.png') center (center / cover) no-repeat
+	.title_header
+		background-color: white
+		color: black
+	.title_subheader
+		color: white
+	&_sity
+		text-align: center
+		margin: 490px auto 0 auto
+		style-type: none
+	&_link
+		cursor: pointer
+		text-decoration: none
+		color: $blue
+		&:hover
+			color: #0c6172
+
+.footer
+	position: relative
+	height: 157px
+	padding: 15px 0 0 0
+	&_headline
+		display: block
+		margin: 0 auto
+		width: 300px
+		height: 4px
+		background-color: $blue
+	&_lang
+		display: block
+		margin: 0 auto
+		color: $blue
+		cursor: pointer
+		padding-top: 20px
+		text-align: center
+		&:hover
+			color: #0c6172
+	&_nav, &_subnav
+		display: block
+		width: 370px
+		margin: 0 auto
+	&_menu, &_submenu
+		display: flex
+		justify-content: space-between
+		list-style-type: none
+		text-decoration: none
+		margin: 0 auto
+		color: grey
+		font-size: 15px
+		font-weight: 300
+		padding-top: 30px
+		padding-left: 0
+	&_nav
+		a
+			text-decoration: none
+			font-weight: 400
+			color: #070716
+			&:hover
+				color: #787878
+	&_subnav
+		width: 390px
+		a
+			text-decoration: none
+			font-weight: 300
+			color: #999999
+			&:hover
+				color: #070716
+	&_submenu
+		font-size: 11px
+		padding-top: 15px
+	&_social
+		position: absolute
+		top: 52px
+		left: 22px
+		width: 155px
+		display: flex
+		justify-content: space-between
+		&_round
+			width: 30px
+			height: 30px
+			background-color: black
+			border-radius: 50%
+			cursor: pointer
+	&_softshop
+		position: absolute
+		top: 52px
+		right: 22px
+		width: 300px
+		display: flex
+		justify-content: space-between
+		&_item
+			width: 92px
+			height: 27px
+			border-radius: 5px
+			cursor: pointer
+			&:nth-child(1)
+				background: url('../icons/aple_store.png') center (center / cover) no-repeat
+			&:nth-child(2)
+				background: url('../icons/andro_store.png') center (center / cover) no-repeat
+			&:nth-child(3)
+				background: url('../icons/win_store.png') center (center / cover) no-repeat
+	&_downline
+		display: block
+		margin: 0 0
+		width: 100%
+		height: 8px
+		background-color: black
+		margin-top: 32px
