@@ -4,6 +4,8 @@
             padding-right: 20px
         &_link
             font-size: 13px
+        a:hover
+            color: white
     .promo
         &_header
             font-size: 50px
@@ -21,6 +23,8 @@
             padding-right: 8px
         &_link
             font-size: 10px
+        a:hover
+            color: white
     .subheader
         &_logo
             img
@@ -31,6 +35,10 @@
             margin-top: 21px
             width: 100%
             height: 40px
+            &:hover
+                background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
+        a:hover
+            color: white
     .promo
         &_header
             font-size: 40px
@@ -55,6 +63,8 @@
             width: 500px
             margin: 0 auto
             transform: none
+    .world_sity a:hover
+        color: $blue
 @media (max-width: 1100px)
     .footer
         padding: 10px 0 0 0
@@ -65,6 +75,8 @@
             padding: 5px 0 0 0
         &_lang
             padding: 5px 0 0 0
+            &:hover
+                color: $blue
         &_btn
             display: flex
             justify-content: center
@@ -79,6 +91,8 @@
             right: 75px
         &_downline
             margin-top: 52px
+    .world_sity a:hover
+        color: $blue
 @media (max-width: 767px)
     .menu
         position: fixed
@@ -101,6 +115,8 @@
             margin-top: 10px
         &_link
             font-size: 15px
+        a:hover
+            color: white
     .choise
         img
             width: 80%
@@ -148,11 +164,15 @@
             height: 40px
             margin: 0 auto
             margin-top: 10px
+            &:hover
+                background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
     .promo
         &_header
             line-height: 45px
         &_subheader
             font-size: 30px
+    .world_sity a:hover
+        color: $blue
 @media (max-width: 575px)
     .title_header
         margin: 0 auto
@@ -180,6 +200,8 @@
             width: 110px
             height: 22px
             font-size: 10px
+            &:hover
+                background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
     .promo
         min-height: 400px
         padding: 53px 0 35px 0
@@ -198,8 +220,19 @@
             width: 210px
             height: 50px
             margin-top: 72px
+            &:hover
+                background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%)
     .menu
         width: 85%
+        &_item
+            width: 100%
+            text-align: center
+            margin: 10px 0
+            padding: 5px 0
+        &_link
+            display: block
+        a:hover
+            color: white
     .advantages
         padding: 22px 0 36px 0
         &_tegs
@@ -248,6 +281,8 @@
             justify-content: center
             vertical-align: bottom
             margin-top: 150px
+            a:hover
+                color: $blue
     .footer
         padding: 10px 0 0 0
         min-height: 155px
@@ -262,6 +297,8 @@
                 a
                     font-size: 14px
                     margin: 0 7px
+            a:hover
+                color: black
         &_subnav
             width: 92%
             .footer_submenu
@@ -277,8 +314,12 @@
                     line-height: 14px
                     text-align: left
                     height: 16px
+            a:hover
+                color: #787878
         &_lang
             padding: 5px 0 0 0
+            &:hover
+                color: $blue
         &_btn
             display: flex
             justify-content: center
@@ -286,7 +327,6 @@
         &_social
             position: relative
             top: 10px
-            // left: 42%
             &_link
                 margin: 0 5px
         &_softshop
